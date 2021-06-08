@@ -12,9 +12,13 @@ There are components available for projects built using:
 
 ### UI Components
 
-| Component Type | Name       | Vue                | React   |
-| -------------- | ---------- | :----------------: | :-----: |
-| Table          | SyaraTable | :heavy_check_mark: | :x:     |
+| Component Type | Name        | Vue                | React   |
+| -------------- | ----------- | :----------------: | :-----: |
+| Table          | SyTable     | :heavy_check_mark: | :x:     |
+| Form           | SyForm      | :x:                | :x:     |
+| Button         | SyButton    | :x:                | :x:     |
+| Chart          | SyChart     | :x:                | :x:     |
+| Icons          | SyIcon      | :x:                | :x:     |
 
 ::: warning
 This is a work in progress (WIP)
