@@ -33,16 +33,14 @@ npm install vue-syara-ui
 
     // regular imports for vue 2.x
     import Vue from 'vue'
-    import App from './App.vue'
-
-    // import syara ui from module vue2-syara-ui
+ 
+    // import and register SyaraUi globally (all components available)
     import SyaraUi from 'vue2-syara-ui'
-    // register syara globally
     Vue.use(SyaraUi)
     
     // Or choose only the components you need
     import { SyaraUiComponents } from 'vue2-syara-ui'
-    Vue.use(SyaraUiComponents.SyaraTable)
+    Vue.use(SyaraUiComponents.SyTable) 
     
     // ...
 
@@ -56,13 +54,12 @@ npm install vue-syara-ui
     import { createApp } from 'vue'
     import App from './App.vue'
 
-    // import syara ui from module vue-syara-ui
     import SyaraUi from 'vue-syara-ui'
 
     createApp(App).use(SyaraUi).mount('#app')
 
 ```
 
-## More information
+## Source code
 
-> [![github](https://github.com/favicon.ico)](https://github.com/mLandim/vue2-syara-ui) [![npm](https://www.npmjs.com/favicon.ico)](https://www.npmjs.com/package/vue2-syara-ui) 
+> [![github](https://github.com/favicon.ico)](https://github.com/mLandim/vue2-syara-ui)

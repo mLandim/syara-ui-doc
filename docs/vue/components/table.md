@@ -1,6 +1,8 @@
 # Table
 
-Once `SyaraUi` is imported and registered in main.js file, you can use the table component by indicating the element `<SyaraTable />` and set the required props and listeners.
+Once `SyaraUi` is imported and registered in main.js file, you can use the table component by indicating the element `<SyTable />` and set the required props and listeners.
+
+<div style="text-align:center; margin: 30px auto;"><img src="/SyTable.PNG" /></div>
 
 Component's template
 ``` vue
@@ -8,13 +10,13 @@ Component's template
     <template>
 
         <!-- Minimal example -->
-        <SyaraTable 
+        <SyTable 
         :header="fieldsProperties" 
         :body="bodyData" 
         />
 
         <!-- Or using all options  -->
-        <SyaraTable 
+        <SyTable 
         :title="'My Table'"
         :header="fieldsProperties" 
         :body="bodyData" 
