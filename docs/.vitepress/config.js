@@ -19,7 +19,10 @@ const sidebarVue = () => {
                     text: 'Components', // link: '/vue/components/'
                     children: [
                         { text: 'Table', link: '/vue/components/table'},
-                        { text: 'Form', link: '/vue/components/form'}
+                        { text: 'Form', link: '/vue/components/form'},
+                        { text: 'Button', link: '/vue/components/button'},
+                        { text: 'Chart', link: '/vue/components/chart'},
+                        { text: 'Icons', link: '/vue/components/icons'}
                     ]
                 }
                 

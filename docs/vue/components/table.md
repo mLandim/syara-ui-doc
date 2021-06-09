@@ -24,7 +24,7 @@ Component's template
         :bodyHeight="450"
         :bodyLoading="loading"
         :bodyLoadingText="loadingText"
-        :pageLimit="nLinesPage" 
+        :pageLimit="100" 
         :selectionField="true"
         :footerText="'Showing __LINES__ of __MAXLINES__ lines'"
 
@@ -43,7 +43,8 @@ Component's script
         export default {
             data() {
                 return {
-                    // Must have
+
+                    // Required
                     fieldsProperties: [
                         {text: 'Id', field: 'id', filter: true, asc: true},
                         {text: 'Album Id', field: 'albumId', filter: true },
@@ -98,24 +99,55 @@ Component's script
    
 ```
 
-## props
+## Props
 
-* header `Array<Object>`
-* body `Array<Object>`
+* header |  `Array<Object>` | `required` | Array of objects with the properties for each column of the table
+    > header properties
+    * id | `Any` 
+    * text | `String` | Column text 
+    * field | `String` | Map to the object property of `bodyData`'s array
+    * filter | `Boolean` | default: `false` | Define if the column have the filter input 
+    * filterText | `String` | default: `Filter...` | Define default text for the filter input
+    * filterPlaceholder | `String`
+    * textAlign | `String`
+    * style | `Object` | Define additional style to column - it's possible to use css properties in camelCase style
+    * asc | `Boolean` | Define order for column's data
+    * actions | `Array<Object>`
+        > actions properties
+        * callback | `String` | function name
+        * info | `String` | Map to the object property of `bodyData`'s array - show the value besides icon
+        * icon | `String` | Svg icon code
 
-[optional]
+    ``` js
+        // ...
+        fieldsProperties: [
+            {text: 'Id', field: 'id', filter: true, asc: true},
+            {text: 'Album Id', field: 'albumId', filter: true, style: {width: '50px'} },
+            // ...
+            {
+                text: 'Actions', 
+                actions:[
+                    {callback:'editLine', info: 'id', icon: '<svg>...You svg icon code here...</svg>'}
+                ]    
+            }
+        ],
+        //...
+    ```
+
+* body | `Array<Object>` | `required`
+
 * title | `String`
-* bodyHeight | `Number`
+* bodyHeight | `Number` | Height of tBody in px
 * bodyLoading | `Boolean` | default: `false`
 * bodyLoadingText | `String` | default `Fetching data, please wait...`
 * theme | `String` | default `syara-light`
 * myClass | `String` 
 * pageLimit | `Number`
-* selectionField | `Boolean`
+* selectionField | `Boolean` | Define if table will have a column with checkbox for select line
 * footerText | `String` | default `Showing __LINES__ of __MAXLINES__`
 
 
-## listeners
+## Listeners
 
 * selectedLines
 * actionCallbackFunctions

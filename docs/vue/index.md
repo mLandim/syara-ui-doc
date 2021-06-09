@@ -4,7 +4,7 @@
 
 [[toc]]
 
-## Prerequisites
+## Requirements
 
 * Node.js 12+
 * Vue.js 2.x for `vue2-syara-ui` or 3.x for `vue-syara-ui`
