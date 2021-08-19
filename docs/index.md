@@ -5,6 +5,9 @@ sidebar: false
 <div style="text-align:center; margin-top: 50px;"><img height="100" src="/syara-logo-v2-vec.svg" /></div>
 
 <!-- Designed to help developers build web apps, Syara UI will offer a wide variety of components that could be used to create visually consistent and intuitive interfaces faster. -->
+::: warning
+This is a work in progress (WIP)
+:::
 
 Web components for visually consistent and intuitive interfaces.
 
@@ -22,7 +25,5 @@ There are components available for projects built using:
 | Chart          | SyChart     | :x:                | :x:     |
 | Icons          | SyIcon      | :x:                | :x:     |
 
-::: warning
-This is a work in progress (WIP)
-:::
+
 
