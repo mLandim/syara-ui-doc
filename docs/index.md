@@ -2,13 +2,13 @@
 sidebar: false
 ---
 
-<div style="text-align:center; margin-top: 50px;"><img src="/SyaraUI.svg" /></div>
+<div style="text-align:center; margin-top: 50px;"><img height="100" src="/syara-logo-v2-vec.svg" /></div>
 
-Designed to help developers build web apps, Syara UI offers a wide variety of components that can be used to create visually consistent and intuitive interfaces with greater speed.
+Designed to help developers build web apps, Syara UI will offer a wide variety of components that could be used to create visually consistent and intuitive interfaces faster.
 
 There are components available for projects built using:
-* [Vue](/vue/) 
-* [React](/react/) 
+* [Vue.js](/vue/) 
+* [React.js](/react/) 
 
 ### UI Components
 
