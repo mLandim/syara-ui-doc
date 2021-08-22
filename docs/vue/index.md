@@ -37,10 +37,7 @@ npm install @syara/ui-vue
     import 'syara-ui-vue/dist/syara-ui.css'
 
     Vue.use(SyaraUi)
-    
-    Vue.use(SyaraUiComponents.SyTable) 
-    
-    // ...
+ 
 
 ```
 
@@ -58,6 +55,8 @@ npm install @syara/ui-vue
     createApp(App).use(SyaraUi).mount('#app')
 
 ```
+
+
 <!-- 
 ## Source code
 
