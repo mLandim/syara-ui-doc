@@ -3,7 +3,7 @@
 Once `SyaraUi` is imported and registered in main.js file, you can use the table component by indicating the element `<SyTable />` and set the required props and listeners.
 
 <!-- <div style="text-align:center; margin: 30px auto;"><img src="/SyTable.PNG" /></div> -->
-<div style="text-align:center; margin: 30px auto;"><img :src="$withBase('/SyTable.PNG')" /></div>
+<div style="text-align:center; margin: 30px auto;"><img :src="$withBase('/SyTable.jpg')" /></div>
 
 Component's template
 ``` vue
